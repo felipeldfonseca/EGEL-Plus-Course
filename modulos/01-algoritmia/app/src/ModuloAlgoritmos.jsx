@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
 
 const ModuloAlgoritmos = () => {
   const [nivel, setNivel] = useState('basico');
@@ -77,16 +78,18 @@ Correctitud:
           <button
             key={n}
             onClick={() => setNivel(n)}
-            className={\`px-4 py-2 rounded-lg font-medium \${nivel === n ? 'bg-blue-500 text-white' : 'bg-gray-200'}\`}
+            className={`px-4 py-2 rounded-lg font-medium ${nivel === n ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
           >
             {n.charAt(0).toUpperCase() + n.slice(1)}
           </button>
         ))}
       </div>
 
-      <div className="bg-blue-50 border-l-4 border-blue-300 p-4 rounded whitespace-pre-line leading-relaxed">
+      <div className="bg-blue-50 border-l-4 border-blue-300 p-4 rounded leading-relaxed">
         <h2 className="text-xl font-semibold mb-2">{conteudo[nivel].titulo}</h2>
-        <p>{conteudo[nivel].texto}</p>
+        <ReactMarkdown className="prose prose-blue max-w-none">
+          {conteudo[nivel].texto}
+        </ReactMarkdown>
       </div>
     </div>
   );
