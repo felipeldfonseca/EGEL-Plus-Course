@@ -1,49 +1,59 @@
-🎓 EGEL Plus - Preparación para Ciencias Computacionales
-📋 Sobre este Proyecto
-Este repositorio contiene módulos de estudio estructurados para la preparación del EGEL Plus en Computación (COMPU) del CENEVAL, diseñados específicamente para estudiantes de Ciencias de Datos.
-🎯 Objetivo
+# 🎓 EGEL Plus - Preparación para Ciencias Computacionales
+
+## 📋 Sobre este Proyecto
+Este repositorio contiene módulos de estudio estructurados para la preparación del EGEL Plus en Computación (COMPU) del CENEVAL, diseñados para estudiantes de Ciencias de Datos.
+
+## 🎯 Objetivo
 Proporcionar una preparación integral y sistemática que combine:
+- **80% Teoría** con explicaciones detalladas y analogías
+- **20% Práctica** con ejercicios tipo EGEL
+- Progresión gradual: Básico → Intermedio → Avanzado
+- Contenido trilingüe: Español, Português, English
 
-80% Teoría con explicaciones detalladas y analogías
-20% Práctica con ejercicios tipo EGEL
-Progresión gradual: Básico → Intermedio → Avanzado
-Contenido trilingüe: Español, Português, English
+---
 
+## 📊 Estructura del Examen EGEL Plus
 
-📊 Estructura del Examen EGEL Plus
-SecciónÁreasReactivosDisciplinar específica4 áreas principales140TransversalComprensión lectora + Redacción60TOTAL200
-🔍 Áreas de Conocimiento
-1. 🧮 Algoritmia (40 reactivos)
+| Sección      | Áreas                              | Reactivos |
+|--------------|------------------------------------|-----------|
+| Disciplinar  | 4 áreas principales                | 140       |
+| Transversal  | Comprensión lectora + Redacción    | 60        |
+| **TOTAL**    |                                    | **200**   |
 
-Análisis y diseño de algoritmos
-Estructuras de datos
-Matemáticas discretas
-Lógica computacional
+---
 
-2. 💻 Desarrollo de software de base (30 reactivos)
+## 🔍 Áreas de Conocimiento
 
-Arquitectura de computadoras y sistemas operativos
-Compiladores
-Redes de computadoras
+1. 🧮 **Algoritmia** (40 reactivos)
+   - Análisis y diseño de algoritmos
+   - Estructuras de datos
+   - Matemáticas discretas
+   - Lógica computacional
 
-3. 🌐 Desarrollo de software de aplicación (40 reactivos)
+2. 💻 **Desarrollo de software de base** (30 reactivos)
+   - Arquitectura de computadoras y sistemas operativos
+   - Compiladores
+   - Redes de computadoras
 
-Ingeniería de software
-Lenguajes de programación
-Bases de datos
-Seguridad informática
+3. 🌐 **Desarrollo de software de aplicación** (40 reactivos)
+   - Ingeniería de software
+   - Lenguajes de programación
+   - Bases de datos
+   - Seguridad informática
 
-4. 🤖 Soluciones de cómputo inteligente (30 reactivos)
+4. 🤖 **Soluciones de cómputo inteligente** (30 reactivos)
+   - Inteligencia artificial
+   - Minería de datos
+   - Cómputo distribuido
 
-Inteligencia artificial
-Minería de datos
-Cómputo distribuido
+---
 
+## 📁 Estructura del Proyecto
 
-📁 Estructura del Proyecto
+```plaintext
 EGEL-Plus-Preparation/
-├── 📄 README.md                    # Este archivo
-├── 📚 modulos/                     # Módulos de estudio
+├── README.md
+├── modulos/
 │   ├── 01-algoritmia/
 │   │   ├── algoritmos.md
 │   │   ├── estructuras-datos.md
@@ -62,138 +72,143 @@ EGEL-Plus-Preparation/
 │       ├── inteligencia-artificial.md
 │       ├── mineria-datos.md
 │       └── computo-distribuido.md
-├── 🧪 simulacros/                  # Exámenes de práctica
+├── simulacros/
 │   ├── simulacro-01.md
 │   ├── simulacro-02.md
 │   └── simulacro-completo.md
-├── 📖 glossario/                   # Términos técnicos
+├── glossario/
 │   ├── glosario-trilinguie.md
 │   └── conceptos-clave.md
-├── 🔧 scripts/                     # Herramientas de automatización
+├── scripts/
 │   ├── generar-modulo.py
 │   └── crear-simulacro.py
-└── 📈 tracking/                    # Seguimiento de progreso
+└── tracking/
     ├── progreso.md
     └── estadisticas.md
+```
 
-🚀 Cómo Usar Este Repositorio
-📚 Para Estudiar
+---
 
-Comenzar con Algoritmia (área con más reactivos)
-Seguir la progresión: Básico → Intermedio → Avanzado
-Usar el glossario para clarificar términos
-Practicar con simulacros regularmente
+## 🚀 Cómo Usar Este Repositorio
 
-📈 Tracking de Progreso
+- Comenzar con Algoritmia (área con más reactivos)
+- Seguir la progresión: Básico → Intermedio → Avanzado
+- Usar el glossario para clarificar términos
+- Practicar con simulacros regularmente
 
-✅ Marcar módulos completados
-📊 Registrar resultados de simulacros
-🎯 Identificar áreas débiles
+---
 
-🔄 Metodología de Estudio
+## 📈 Tracking de Progreso
 
-Lectura teórica con analogías
-Visualización de conceptos
-Práctica dirigida con ejercicios
-Simulacros cronometrados
-Revisión de áreas débiles
+- ✅ Marcar módulos completados
+- 📊 Registrar resultados de simulacros
+- 🎯 Identificar áreas débiles
 
+---
 
-🎯 Estrategias Específicas para EGEL
-⏱️ Gestión del Tiempo
+## 🔄 Metodología de Estudio
 
-1 minuto por reactivo (200 reactivos = 200 minutos)
-Técnica de eliminación para opciones múltiples
-Marcar y continuar si hay dudas
+- Lectura teórica con analogías
+- Visualización de conceptos
+- Práctica dirigida con ejercicios
+- Simulacros cronometrados
+- Revisión de áreas débiles
 
-🧠 Técnicas de Examen
+---
 
-Leer toda la pregunta antes de ver opciones
-Identificar palabras clave en español técnico
-No cambiar respuestas sin razón sólida
-Gestionar ansiedad con respiración
+## 🎯 Estrategias Específicas para EGEL
 
-📝 Preparación Mental
+### ⏱️ Gestión del Tiempo
+- 1 minuto por reactivo (200 reactivos = 200 minutos)
+- Técnica de eliminación para opciones múltiples
+- Marcar y continuar si hay dudas
 
-Simulacros cronometrados semanales
-Revisión de errores sistemática
-Descanso adecuado antes del examen
+### 🧠 Técnicas de Examen
+- Leer toda la pregunta antes de ver opciones
+- Identificar palabras clave en español técnico
+- No cambiar respuestas sin razón sólida
+- Gestionar ansiedad con respiración
 
+### 📝 Preparación Mental
+- Simulacros cronometrados semanales
+- Revisión de errores sistemática
+- Descanso adecuado antes del examen
 
-📖 Recursos Bibliográficos
-📚 Libros Recomendados por CENEVAL
+---
 
-Algoritmia: Aho, Hopcroft & Ullman - "Estructuras de datos y algoritmos"
-Sistemas: Tanenbaum - "Sistemas operativos modernos"
-Redes: Kurose & Ross - "Redes de computadoras"
-IA: Russell & Norvig - "Inteligencia artificial"
+## 📖 Recursos Bibliográficos
 
-🌐 Recursos Online
+### 📚 Libros Recomendados por CENEVAL
+- Algoritmia: Aho, Hopcroft & Ullman - "Estructuras de datos y algoritmos"
+- Sistemas: Tanenbaum - "Sistemas operativos modernos"
+- Redes: Kurose & Ross - "Redes de computadoras"
+- IA: Russell & Norvig - "Inteligencia artificial"
 
-Documentación oficial EGEL Plus
-Khan Academy (Matemáticas discretas)
-Coursera (Ciencias de la computación)
+### 🌐 Recursos Online
+- Documentación oficial EGEL Plus
+- Khan Academy (Matemáticas discretas)
+- Coursera (Ciencias de la computación)
 
+---
 
-📊 Progreso Actual
-✅ Completado
+## 📊 Progreso Actual
 
- Módulo 1: Algoritmia
+### ✅ Completado
+- Módulo 1: Algoritmia
+  - Algoritmos básicos
+  - Estructuras de datos
+  - Matemáticas discretas
+  - Lógica computacional
 
- Algoritmos básicos
- Estructuras de datos
- Matemáticas discretas
- Lógica computacional
+### 🔄 En Progreso
+- Simulacros de práctica
+- Glosario trilíngüe
 
+### 📅 Planificación
+- Meta: Examen en [fecha]
+- Tiempo de estudio: [X] horas semanales
+- Revisiones: Cada domingo
 
+---
 
-🔄 En Progreso
+## 🤝 Contribuciones
 
- Simulacros de práctica
- Glosario trilíngüe
+### ✨ Cómo Contribuir
+- Fork del repositorio
+- Crear rama para nueva funcionalidad
+- Commit con mensajes descriptivos
+- Pull request con descripción clara
 
-📅 Planificación
+### 📝 Estándares
+- Contenido en español para términos técnicos
+- Ejemplos prácticos en cada módulo
+- Analogías comprensibles para conceptos complejos
 
-Meta: Examen en [fecha]
-Tiempo de estudio: [X] horas semanales
-Revisiones: Cada domingo
+---
 
-
-🤝 Contribuciones
-✨ Cómo Contribuir
-
-Fork del repositorio
-Crear rama para nueva funcionalidad
-Commit con mensajes descriptivos
-Pull request con descripción clara
-
-📝 Estándares
-
-Contenido en español para términos técnicos
-Ejemplos prácticos en cada módulo
-Analogías comprensibles para conceptos complejos
-
-
-📄 Licencia
+## 📄 Licencia
 Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para detalles.
 
-👤 Autor
-Estudiante de Ciencias de Datos
-Universidad del Valle de México
+---
+
+## 👤 Autor
+Estudiante de Ciencias de Datos  
+Universidad del Valle de México  
 GPA: 9.7/10
 
-GitHub: @felipeldfonseca
+GitHub: [@felipeldfonseca](https://github.com/felipeldfonseca)  
 Email: felipeldfonseca@gmail.com
 
+---
 
-🙏 Agradecimientos
+## 🙏 Agradecimientos
+- Universidad del Valle de México por la formación académica
+- CENEVAL por los recursos oficiales
+- Comunidad de desarrolladores por el apoyo continuo
 
-Universidad del Valle de México por la formación académica
-CENEVAL por los recursos oficiales
-Comunidad de desarrolladores por el apoyo continuo
-
+---
 
 <div align="center">
-🎯 ¡Éxito en el EGEL Plus! 🎯
+🎯 ¡Éxito en el EGEL Plus! 🎯  
 "La preparación es la clave del éxito"
 </div>
