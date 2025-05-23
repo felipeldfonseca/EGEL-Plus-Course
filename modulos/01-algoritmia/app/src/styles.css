@@ -1,7 +1,12 @@
 body {
-  font-family: sans-serif;
-  background: #f9f9fc;
   margin: 0;
-  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
   color: #333;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

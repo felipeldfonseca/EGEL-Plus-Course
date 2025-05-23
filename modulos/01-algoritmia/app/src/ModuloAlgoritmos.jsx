@@ -1,62 +1,92 @@
 import React, { useState } from 'react';
-import { CheckCircle, Globe, Target } from 'lucide-react';
 
 const ModuloAlgoritmos = () => {
-  const [nivelActual, setNivelActual] = useState('basico');
+  const [nivel, setNivel] = useState('basico');
 
-  const glosario = {
-    'algoritmo': {
-      es: 'Secuencia de pasos para resolver un problema',
-      pt: 'Sequência de passos para resolver um problema',
-      en: 'Sequence of steps to solve a problem'
+  const conteudo = {
+    basico: {
+      titulo: "¿Qué es un Algoritmo?",
+      texto: `
+🏠 **Analogía: La Receta de Cocina**
+
+Imagina que quieres hacer tacos. ¿Qué necesitas?
+
+1. **Ingredientes** (datos de entrada)
+2. **Pasos específicos** (instrucciones)
+3. **Plato final** (resultado)
+
+Un **algoritmo** es eso: una receta paso a paso.
+
+**Características:**
+- Finito
+- Definido
+- Entrada / Salida
+- Efectivo
+
+**Ejemplo:**
+1. Leer A
+2. Leer B
+3. Si A > B, mayor = A
+4. Si no, mayor = B
+5. Mostrar mayor
+      `,
+    },
+    intermedio: {
+      titulo: "Tipos de Algoritmos",
+      texto: `
+🏗️ **Analogía: El Arquitecto**
+
+- Planos = pseudocódigo
+- Materiales = estructuras de datos
+- Resultado = solución
+
+Tipos:
+- Secuenciales
+- Condicionales
+- Iterativos
+- Recursivos
+      `
+    },
+    avanzado: {
+      titulo: "Diseño y Optimización",
+      texto: `
+⚡ **Analogía: GPS Inteligente**
+
+Técnicas:
+- Divide y vencerás
+- Programación dinámica
+- Greedy
+- Backtracking
+
+Correctitud:
+- Invariante
+- Precondición
+- Postcondición
+      `
     }
   };
 
-  const niveles = {
-    basico: "Analogía: Receta de cocina. Un algoritmo es como una receta.",
-    intermedio: "Analogía: Arquitecto y planos. Tipos de algoritmos.",
-    avanzado: "Analogía: GPS inteligente. Técnicas de diseño y optimización."
-  };
-
   return (
-    <div className="p-6 max-w-3xl mx-auto bg-white shadow rounded">
-      <h1 className="text-3xl font-bold mb-4">EGEL Plus - Algoritmos</h1>
+    <div className="max-w-3xl mx-auto bg-white shadow p-6 rounded mt-10">
+      <h1 className="text-3xl font-bold text-center mb-6 text-gradient bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+        EGEL Plus - Algoritmos
+      </h1>
 
-      <div className="flex gap-2 mb-4">
-        {['basico', 'intermedio', 'avanzado'].map(nivel => (
+      <div className="flex justify-center mb-4 gap-2">
+        {['basico', 'intermedio', 'avanzado'].map(n => (
           <button
-            key={nivel}
-            onClick={() => setNivelActual(nivel)}
-            className={\`px-4 py-2 rounded \${nivelActual === nivel ? 'bg-blue-500 text-white' : 'bg-gray-100'}\`}
+            key={n}
+            onClick={() => setNivel(n)}
+            className={\`px-4 py-2 rounded-lg font-medium \${nivel === n ? 'bg-blue-500 text-white' : 'bg-gray-200'}\`}
           >
-            {nivel.charAt(0).toUpperCase() + nivel.slice(1)}
+            {n.charAt(0).toUpperCase() + n.slice(1)}
           </button>
         ))}
       </div>
 
-      <div className="bg-blue-50 p-4 rounded mb-6">
-        <p>{niveles[nivelActual]}</p>
-      </div>
-
-      <div className="bg-yellow-50 p-4 rounded mb-6">
-        <h2 className="font-semibold mb-2 flex items-center gap-2">
-          <Globe className="w-4 h-4" /> Glosario Trilingüe
-        </h2>
-        {Object.entries(glosario).map(([termino, traducciones]) => (
-          <div key={termino} className="mb-2">
-            <strong>{termino}:</strong>
-            <ul className="ml-4 text-sm list-disc">
-              <li><b>ES:</b> {traducciones.es}</li>
-              <li><b>PT:</b> {traducciones.pt}</li>
-              <li><b>EN:</b> {traducciones.en}</li>
-            </ul>
-          </div>
-        ))}
-      </div>
-
-      <div className="text-right text-sm text-gray-400">
-        <CheckCircle className="inline w-4 h-4 mr-1" />
-        Módulo interactivo
+      <div className="bg-blue-50 border-l-4 border-blue-300 p-4 rounded whitespace-pre-line leading-relaxed">
+        <h2 className="text-xl font-semibold mb-2">{conteudo[nivel].titulo}</h2>
+        <p>{conteudo[nivel].texto}</p>
       </div>
     </div>
   );
